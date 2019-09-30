@@ -5,8 +5,8 @@ $password = "123";
 $dbname = "labs";
 
 
-if(isset($_GET['val'])){
-	$num = $_GET['val'];
+if(isset($_POST['val'])){
+	$num = $_POST['val'];
 	$conn = new mysqli($servername, $username, $password, $dbname);
 	if ($conn->connect_error) {
 		die("Connection failed: " . $conn->connect_error);
