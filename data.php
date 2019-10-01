@@ -1,8 +1,13 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "123";
-$dbname = "labs";
+$servername = $_ENV["DB_HOST"]; //"localhost";
+$username = $_ENV[""];
+$password = $_ENV[""];
+$dbname = $_ENV["DB_NAME"];
+
+//probably ussless
+$db_port = $_ENV["DB_PORT"];
+$app_port = $_ENV["APP_PORT"];
+$app_host = $_ENV["APP_HOST"];
 
 
 if(isset($_POST['val'])){
